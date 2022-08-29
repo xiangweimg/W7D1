@@ -1,0 +1,13 @@
+<h1>This is all the Cats</h1>
+
+<ul>
+    <% @cats.each do |cat|%> 
+    <div> <%= cat.id %> </div>
+    <li><%= cat.name %></li>
+    <li><%= cat.sex %></li>
+    <li><%= cat.color %></li>
+    <li><%= cat.birth_date %></li>
+    <li><%= cat.description %></li>
+    <br>
+    <% end %>
+</ul>
